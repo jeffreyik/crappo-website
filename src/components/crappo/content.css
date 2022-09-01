@@ -1,0 +1,17 @@
+.content .container { 
+    display: flex;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.content p {
+    line-height: 28px;
+    width: 408px;
+    padding: 1.5em 0;
+}

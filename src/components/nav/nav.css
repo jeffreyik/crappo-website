@@ -1,0 +1,31 @@
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.nav-list {
+    padding-right: 1.5em;
+}
+
+.nav-list > li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #3671E9;
+}
+
+.nav-items,
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items > *,
+.nav-list > * {
+    margin-left: 2em;
+}
+
+.center-border {
+    margin: 0 1em;
+    border-right: 2px solid rgb(242, 242, 242, 0.3);
+}

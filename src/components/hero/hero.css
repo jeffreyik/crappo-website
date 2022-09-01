@@ -1,0 +1,42 @@
+header.hero  .container {
+    display: flex;
+    align-items: center;
+    padding: 2em 0;
+}
+
+header.hero h1 {
+    font-size: 64px;
+    line-height: 75.84px;
+    font-weight: 700;
+}
+
+header.hero p {
+    width: 435px;
+    padding: 1.5em 0;
+}
+
+header.hero .deal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    width: 365px;
+    height: 40px;
+    padding: 0 .4em;
+    margin-bottom: 1em;
+}
+
+header.hero .deal .white {
+    background-color: #fff;
+    color: #0D0D2B;
+    font-weight: 600;
+    border-radius: 32px;
+    padding: 4px 16px;
+    height: 30px;
+}
+
+header.hero .deal p {
+    padding: 0 10px 0 0;
+    width: auto;
+}
