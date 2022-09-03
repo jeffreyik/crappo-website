@@ -44,3 +44,46 @@ export const trade = [
         id: 3,
     },
 ]
+
+export const footerLinks = [
+    {
+        title: "Quick Link",
+        links: [
+            {
+                name: "Home"
+            },
+            {
+                name: "Products"
+            },
+            {
+                name: "About"
+            },
+            {
+                name: "Features"
+            },
+            {
+                name: "Contact"
+            },
+        ]
+    },
+    {
+        title: "Resources",
+        links: [
+            {
+                name: "Download Whitepaper"
+            },
+            {
+                name: "Smart Token"
+            },
+            {
+                name: "Blockchain Explorer"
+            },
+            {
+                name: "Crypto API"
+            },
+            {
+                name: "Interest"
+            },
+        ]
+    }
+]
