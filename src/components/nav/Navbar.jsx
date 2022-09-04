@@ -1,8 +1,12 @@
 import PrimaryBtn from "../others/PrimaryBtn"
 import { FaBars } from 'react-icons/fa'
 import "./nav.css"
+import { useState } from "react"
+import NavMenu from "./NavMenu"
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false)
+
   return (
     <nav>
         <div className="container">
@@ -22,9 +26,10 @@ const Navbar = () => {
                     <PrimaryBtn text="Register" />
                 </div>
             </div>
-            <button className="hamburger-btn">
+            <button className="hamburger-btn" onClick={() => setMenu(true)}>
                 <FaBars />
             </button>
+            <NavMenu menu={menu} setMenu={setMenu} />
         </div>
     </nav>
   )

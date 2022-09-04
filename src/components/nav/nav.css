@@ -38,6 +38,44 @@ nav .container {
     display: none;
 }
 
+.nav-menu {
+    position: fixed;
+    background-color: #252540;
+    color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    font-size: 20px;
+    display: none;
+    overflow-x: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-menu .nav-list {
+    display: block;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.nav-menu .nav-list > * {
+    padding: 1em 0;
+}
+
+.nav-menu .nav-list > *:hover {
+    color: #3671E9;
+    border: 0;
+}
+
+.nav-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: transparent;
+    font-size: 32px;
+}
+
 @media (max-width: 1165px) {
     .hamburger-btn {
         display: block;
@@ -45,5 +83,12 @@ nav .container {
 
     .nav-items {
         display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
