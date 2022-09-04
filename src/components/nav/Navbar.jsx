@@ -1,4 +1,5 @@
 import PrimaryBtn from "../others/PrimaryBtn"
+import { FaBars } from 'react-icons/fa'
 import "./nav.css"
 
 const Navbar = () => {
@@ -21,6 +22,9 @@ const Navbar = () => {
                     <PrimaryBtn text="Register" />
                 </div>
             </div>
+            <button className="hamburger-btn">
+                <FaBars />
+            </button>
         </div>
     </nav>
   )

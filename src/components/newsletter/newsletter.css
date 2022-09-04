@@ -12,6 +12,7 @@ section.newsletter {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-radius: 16px;
     padding: 4em;
 }
@@ -22,7 +23,7 @@ section.newsletter {
     background-color: transparent;
     color: #fff;
     padding: .5em 0;
-    width: 345px;
+    width: 145px;
 }
 
 .join input::placeholder {
@@ -41,10 +42,24 @@ section.newsletter {
     font-weight: 400;
     letter-spacing: 0.01em;
     line-height: 28px;
-    width: 348px;
+    max-width: 348px;
     padding-top: 2em;
 }
 
 .join button {
     margin-left: 3em;
+}
+
+@media (max-width: 1102px) {
+    .join {
+        padding: 2em;
+    }
+
+    .join form {
+        padding: 2em 0;
+    }
+
+    .join button {
+        margin: 0;
+    }
 }

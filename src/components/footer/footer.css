@@ -8,6 +8,10 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-grid > * {
+    padding: 2em 0;
+}
+
 .footer-grid .links {
     display: flex;
     flex-direction: column;
@@ -16,7 +20,7 @@ footer {
 .footer-grid h2 {
     font-size: 32px;
     line-height: 48px;
-    width: 355px;
+    max-width: 355px;
     padding-bottom: 1.2em;
 }
 
@@ -59,4 +63,23 @@ footer {
 
 .social-links > a:hover {
     color:#3671E9;
+}
+
+
+@media (max-width: 1030px) {
+    .footer-grid {
+        flex-direction: column;
+    }
+
+    .footer-grid > * {
+        width: 100%;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+    }
+
+    .social-links {
+        padding-top: 1em;
+    }
 }

@@ -12,22 +12,22 @@ section.trade .container {
 }
 
 section.trade h2 {
-    width: 741px;
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
+    max-width: 341px;
     text-align: center;
     padding-bottom: 1.5em;
 }
 
 .card-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
     border-radius: 16px;
     width: 370px;
-    height: 433px;
+    min-height: 433px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ section.trade h2 {
 }
 
 .card .primary-btn img {
-    padding: 0;
+    padding: 0 0 0 1em;
 }
 
 .card img {
@@ -80,4 +80,10 @@ section.trade h2 {
 
 .card.active p {
     color: #fff;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
 }

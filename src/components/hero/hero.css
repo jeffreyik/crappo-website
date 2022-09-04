@@ -5,14 +5,18 @@ header.hero  .container {
 }
 
 header.hero h1 {
-    font-size: 64px;
+    font-size: 4em;
     line-height: 75.84px;
     font-weight: 700;
 }
 
 header.hero p {
-    width: 435px;
+    max-width: 435px;
     padding: 1.5em 0;
+}
+
+header.hero .hero-img {
+    width: 100%;
 }
 
 header.hero .deal {
@@ -21,13 +25,16 @@ header.hero .deal {
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 32px;
-    width: 365px;
+    max-width: 365px;
     height: 40px;
     padding: 0 .4em;
     margin-bottom: 1em;
 }
 
 header.hero .deal .white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     color: #0D0D2B;
     font-weight: 600;
@@ -39,4 +46,21 @@ header.hero .deal .white {
 header.hero .deal p {
     padding: 0 10px 0 0;
     width: auto;
+}
+
+@media (max-width: 1173px) {
+    header.hero .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    header.hero .deal {
+        font-size: 14px;
+    }
+}
+@media (max-width: 350px) {
+    header.hero .deal {
+        font-size: 11px;
+    }
 }

@@ -11,13 +11,11 @@ section.features .container {
 
 .features h2 {
     text-align: center;
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
-    width: 758px;
+    max-width: 758px;
 }
 
 .row h3 {
+    max-width: 450px;
     font-size: 32px;
     line-height: 150%;
     font-weight: 700;
@@ -25,14 +23,31 @@ section.features .container {
 
 .row p {
     line-height: 28px;
-    width: 480px;
+    max-width: 480px;
     padding: 1em 0;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin: 3em 0;
     width: 100%;
+}
+
+.features img {
+    width: 50%;
+}
+
+@media (max-width: 1138px ) {
+    .features img {
+        width: 100%;
+        padding: 3em 0;
+    }
+
+    .row.reverse {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }

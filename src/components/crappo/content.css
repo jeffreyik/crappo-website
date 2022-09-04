@@ -1,17 +1,22 @@
 .content .container { 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 2em 0;
-}
-
-.content h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
 }
 
 .content p {
     line-height: 28px;
-    width: 408px;
+    max-width: 408px;
     padding: 1.5em 0;
+}
+
+@media (max-width: 1112px) {
+    .content .container {
+        flex-direction: column;
+    }
+
+    .content img {
+        width: 100%;
+    }
 }

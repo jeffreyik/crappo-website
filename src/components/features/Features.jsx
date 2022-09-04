@@ -16,7 +16,7 @@ const Features = () => {
                 </div>
                 <img src="/img/chart.svg" alt="" />
             </div>
-            <div className="row">
+            <div className="row reverse">
                 <img src="/img/statistic.svg" alt="" />
                 <div className="text">
                     <h3>Detailed Statistics</h3>

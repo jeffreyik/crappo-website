@@ -17,7 +17,7 @@
 }
 
 .earning p {
-    width: 622px;
+    max-width: 622px;
     line-height: 27px;
     /* font-size: 18px; */
 }
@@ -53,7 +53,6 @@
 .calculator h2 {
     font-size: 32px;
     line-height: 150%;
-    font-weight: 700;
     letter-spacing: 0.02em;
 }
 
@@ -68,12 +67,12 @@
 }
 
 .calculator form input {
-    width: 45%;
+    min-width: 45%;
     color: #000;
 }
 
 .calculator form select {
-    width: 30%;
+    min-width: 30%;
     cursor: pointer;
 }
 
@@ -83,4 +82,24 @@ form select {
     border-bottom: 2px solid #e0e0e0;
     outline: none;
     font-size: 20px;
+}
+
+@media (max-width: 990px) {
+    .calculator {
+        width: 100%;
+    }
+
+    .calculator form {
+        display: block;
+    }
+
+    .calculator form > *  {
+        display: block;
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .calculator input {
+        width: 100%;
+    }
 }

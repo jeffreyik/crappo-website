@@ -19,7 +19,7 @@ const Hero = () => {
                 </p>
                 <PrimaryBtn text="Try for FREE" icon="/img/arrow-right.svg" />
             </div>
-            <img src="/img/illustration1.svg" alt="" />
+            <img src="/img/illustration1.svg" alt="" className="hero-img" />
         </div>
     </header>
   )

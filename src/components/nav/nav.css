@@ -29,3 +29,21 @@ nav .container {
     margin: 0 1em;
     border-right: 2px solid rgb(242, 242, 242, 0.3);
 }
+
+.hamburger-btn {
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 32px;
+    display: none;
+}
+
+@media (max-width: 1165px) {
+    .hamburger-btn {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+    }
+}
